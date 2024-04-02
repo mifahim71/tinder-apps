@@ -129,7 +129,7 @@ const handleClick = () => {
     });
 
     tp.to('.front',{
-        scale:2,
+        scale:1,
         opacity:0,
         duration: .8
     },"a")
