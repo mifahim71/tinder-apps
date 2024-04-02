@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Tinder | SoulSwipe</title>
+    <style>
+        .bottomContent_container{
+            background: linear-gradient(to bottom, transparent, black);
+        }
+    </style>
+</head>
+<body class="w-full h-full overflow-hidden">
+    <main class="w-full h-screen relative flex justify-center items-center">
+        <div class="incoming w-full h-screen absolute bg-red-900 z-[1]">
+            <img class="incomingImg w-full h-screen object-cover object-center" src="" alt="">
+        </div>
+        <div class="front absolute bg-green-900 w-full h-screen z-[2]">
+            <img class="frontImg w-full h-screen object-cover object-center" src="" alt="">
+        </div>
+        <div class="front-content absolute w-full h-screen z-[3] flex flex-col justify-between items-center">
+            <nav class="w-full h-[80px] flex justify-between items-center px-4">
+                <img class="profileImg w-[40px] h-[40px] rounded-full object-cover object-center" src="" alt="">
+                <h3 class="top-title text-[1rem] font-mono text-white font-normal">Connect Heart</h3>
+                <img class="logo w-[40px] h-[40px] rounded-full object-cover object-center" src="https://www.zdnet.com/a/img/resize/b9917631cac3deb6fc14a03cbf032cb8d2633734/2018/01/23/43db6e1c-ed6f-4d88-9280-a1dc468d3f35/tinder-logo.png?auto=webp&fit=crop&height=1200&width=1200" alt="">
+            </nav>
+            <div class="bottomContent_container overflow-hidden w-full flex flex-col py-4 px-2 gap-2">
+                <h2 class="location textAnimation text-[1rem] text-mono text-white -mb-5"></h2>
+                <div class="name-age flex gap-4 overflow-hidden">
+                    <h1 class="name textAnimation text-[3rem] text-white text-mono font-semibold"></h1>
+                    <h1 class="age textAnimation text-[3rem] text-white/80 text-mono font-semibold">22</h1>
+                </div>
+                <div class="hobby overflow-hidden textAnimation w-full flex gap-4">
+                    
+                </div>
+                <h2 class="text-white textAnimation text-md font-mono">Bio</h2>
+                <p class="details text-white textAnimation text-sm font-mono"></p>
+                <div class="buttons overflow-hidden w-full flex justify-center items-center gap-[10px]">
+                    <button onclick="handleClick()" class="w-[50%] textAnimation py-1 px-4 bg-white rounded-md"><i class="ri-close-fill font-black text-pink-500 font-mono text-3xl"></i></button><button onclick="handleClick()" class="w-[50%] textAnimation py-1 px-4 bg-pink-500 rounded-md"><i class="ri-heart-2-fill font-black text-white font-mono text-3xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
